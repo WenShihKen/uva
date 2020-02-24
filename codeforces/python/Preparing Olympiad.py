@@ -1,6 +1,5 @@
 '''
     Author: Ken
-    Date: 2020-02-06
     Problems: 550B
 '''
 import sys

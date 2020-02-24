@@ -1,6 +1,5 @@
 '''
     Author: Ken
-    Date: 2020-02-04
     Problems: 550C
 '''
 

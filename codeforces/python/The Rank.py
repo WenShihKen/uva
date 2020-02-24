@@ -1,6 +1,5 @@
 '''
     Author: Ken
-    Date: 2020-02-03
     Problems: 1017A
 '''
 
