@@ -1,68 +1,51 @@
-#include<iostream>
-
+/**
+ *  @judge UVA
+ *  @id 10935
+ *  @name Throwing cards away I
+ * 
+ *  @tag Queue
+ */
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <iostream>
+#include <string>
+#include <set>
+#include <queue>
+#include <cmath>
+typedef long long int ll;
 using namespace std;
-
+int a[100005] = {};
 int main()
 {
-	int in1;
-	while (cin >> in1) {
-		if (in1 == 0)
+	//	ios::sync_with_stdio(0);
+	//	cin.tie(0);
+	int n;
+	while (cin >> n)
+	{
+		if (n == 0)
+		{
 			break;
-		bool card[53];
-		int temp[53], discard = 0, start = 1;
-		fill(card, card + 52, false);
-		fill(temp, temp + 52, 0);
-		while (1) {
-			if (discard == in1 - 1)
-				break;
-			temp[discard] = start;
-			card[start] = true;//есдF
-			start++;
-			if (start > in1)
-				start = 1;
-			while (1) {
-				bool flag = false;
-				if (card[start] == false) {
-					start++;
-					if (start > in1)
-						start = 1;
-					while (1) {
-						if (card[start] == false) {
-							flag = true;
-							break;
-						}
-						else {
-							start++;
-							if (start > in1)
-								start = 1;
-						}
-					}
-					if (flag)
-						break;
-				}
-				else {
-					start++;
-					if (start > in1)
-						start = 1;
-				}
-			}
-			discard++;
 		}
-		cout << "Discarded cards:";
-		for (int i = 0; i < discard; i++) {
-			cout << " " << temp[i];
-			if (temp[i + 1]) {
-				cout << ",";
+		queue<int> q;
+		for (int i = 1; i <= n; i++)
+		{
+			q.push(i);
+		}
+		printf("Discarded cards:");
+		while (q.size() != 1)
+		{
+			printf(" %d", q.front());
+			if (q.size() != 2)
+			{
+				printf(",");
 			}
+			q.pop();
+			int t = q.front();
+			q.pop();
+			q.push(t);
 		}
 		cout << endl;
-		cout << "Remaining card: ";
-		for (int i = 1; i <= in1; i++) {
-			if (card[i] == false) {
-				cout << i << endl;
-				break;
-			}
-		}
+		printf("Remaining card: %d\n", q.front());
 	}
-	return 0;
 }
