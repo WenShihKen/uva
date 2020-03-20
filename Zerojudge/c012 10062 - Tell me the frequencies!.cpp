@@ -1,26 +1,55 @@
-#include<stdio.h>
-#include<string.h>
+/**
+ *  @judge Zerojudge
+ *  @id c012
+ *  @name Tell me the frequencies!
+ * 
+ *  @tag Sort
+ */
+#include <vector>
+#include <algorithm>
+#include <map>
+#include <iostream>
+#include <string>
+#include <set>
+#include <queue>
+#include <cmath>
+typedef long long int ll;
+using namespace std;
+struct p
+{
+	int asc = 0;
+	int count = 0;
+};
+bool cmp(p a, p b)
+{
+	if (a.count == b.count)
+	{
+		return a.asc > b.asc;
+	}
+	return a.count < b.count;
+}
 int main()
 {
-	char s[1005];
-	while (gets(s)){
-		int len, i, all[133] = { 0 }, max = 0, j;
-		len = strlen(s);
-		for (i = 0; i < len; i++){
-			all[s[i]]++;
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	string in1;
+	while (getline(cin, in1))
+	{
+		p pp[128] = {};
+		for (int i = 0; i < in1.length(); i++)
+		{
+			pp[in1[i]].asc = in1[i];
+			pp[in1[i]].count++;
 		}
-		for (i = 0; i <= 129; i++){
-			if (all[i]>max){
-				max = all[i];
+		sort(pp, pp + 128, cmp);
+		for (int i = 0; i < 128; i++)
+		{
+			if (pp[i].asc == 0 && pp[i].count == 0)
+			{
+				continue;
 			}
+			cout << pp[i].asc << " " << pp[i].count << endl;
 		}
-		for (i = 1; i <= max; i++){
-			for (j = 129; j >= 0; j--){
-				if (all[j] == i){
-					printf("%d %d\n", j, i);
-				}
-			}
-		}
+		cout << endl;
 	}
-	return 0;
 }
