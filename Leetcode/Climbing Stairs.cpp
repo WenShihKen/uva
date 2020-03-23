@@ -1,21 +1,31 @@
+/**
+ *  @judge Leetcode
+ *  @id 70
+ *  @name Climbing Stairs
+ * 
+ *  @tag dp
+ */
 class Solution
 {
 public:
     int climbStairs(int n)
     {
-
-        long all[100];
-        all[0] = 0, all[1] = 1, all[2] = 2, all[3] = 3;
-        for (int i = 4; i <= 50; i++)
+        if (n <= 2)
         {
-            all[i] = all[i - 1] + all[i - 2];
+            return n;
         }
-
-        return all[n];
+        else
+        {
+            int a = 1, b = 2;
+            int ans = 0;
+            for (int i = 3; i <= n; i++)
+            {
+                ans = a + b;
+                int temp = ans;
+                a = b;
+                b = temp;
+            }
+            return ans;
+        }
     }
 };
-//1111
-//112
-//22
-//121
-//211
