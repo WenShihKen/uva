@@ -1,11 +1,3 @@
-/**
- *  @judge UVA
- *  @id 11942
- *  @name Lumberjack Sequencing
- * 
- *  @tag Ad-hoc
- */
-#include <vector>
 #include <algorithm>
 #include <map>
 #include <iostream>
@@ -13,46 +5,40 @@
 #include <set>
 #include <queue>
 #include <cmath>
+#include <iterator>
 typedef long long int ll;
 using namespace std;
+#define maxN 200005
+
+//ll a[maxN]= {};
+
 int main()
 {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    int t;
+    //	ios::sync_with_stdio(0);
+    //	cin.tie(0);
+    ll t;
     cin >> t;
-    cout << "Lumberjacks:\n";
+    printf("Lumberjacks:\n");
     while (t--)
     {
-        bool lower = true, greater = true;
-        int mi = 99999, ma = -99999, in1;
+        vector<int> a;
         for (int i = 0; i < 10; i++)
         {
-            cin >> in1;
-            if (in1 > ma)
-            {
-                ma = in1;
-            }
-            else
-            {
-                greater = false;
-            }
-            if (in1 < mi)
-            {
-                mi = in1;
-            }
-            else
-            {
-                lower = false;
-            }
+            int aa;
+            cin >> aa;
+            a.push_back(aa);
         }
-        if (lower == true || greater == true)
+        bool up, down;
+        up = is_sorted(a.begin(), a.end());
+        reverse(a.begin(), a.end());
+        down = is_sorted(a.begin(), a.end());
+        if (up || down)
         {
-            cout << "Ordered\n";
+            printf("Ordered\n");
         }
         else
         {
-            cout << "Unordered\n";
+            printf("Unordered\n");
         }
     }
 }
