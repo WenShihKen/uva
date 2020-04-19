@@ -4,7 +4,7 @@
  *  @name Best Time to Buy and Sell Stock
  *  @contest 
  * 
- *  @tag dp, implementation
+ *  @tag dp, ad-hoc
  */
 class Solution
 {

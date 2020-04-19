@@ -4,7 +4,7 @@
  *  @name In Search of an Easy Problem
  *  @contest Technocup 2019 - Elimination Round 1
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <algorithm>
 #include <map>

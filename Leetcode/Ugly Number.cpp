@@ -4,7 +4,7 @@
  *  @name Ugly Number
  *  @contest
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 class Solution
 {

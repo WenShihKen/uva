@@ -4,7 +4,7 @@
  *  @name Maximums
  *  @contest Codeforces Global Round 7
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <vector>
 #include <algorithm>

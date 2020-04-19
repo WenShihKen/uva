@@ -4,7 +4,7 @@
  *  @name Anton and Polyhedrons
  *  @contest Codeforces Round #404
  * 
- *  @tag implementation, string
+ *  @tag ad-hoc, string
  */
 #include <algorithm>
 #include <map>

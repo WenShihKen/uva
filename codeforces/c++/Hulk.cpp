@@ -4,7 +4,7 @@
  *  @name Hulk
  *  @contest Codeforces Round #366
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <algorithm>
 #include <map>

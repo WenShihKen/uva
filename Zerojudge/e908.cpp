@@ -4,7 +4,7 @@
  *  @name 星期幾咧
  *  @contest
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <vector>
 #include <algorithm>

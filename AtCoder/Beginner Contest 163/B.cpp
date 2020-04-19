@@ -1,8 +1,8 @@
 /**
- *  @judge Codeforces
- *  @id 791A
- *  @name Bear and Big Brother
- *  @contest Codeforces Round #405
+ *  @judge Atcoder
+ *  @id B
+ *  @name Homework
+ *  @contest Beginner Contest 163
  * 
  *  @tag ad-hoc
  */
@@ -17,26 +17,34 @@
 #include <array>
 typedef long long int ll;
 using namespace std;
-#define maxN 1005
+#define maxN 10005
 
-int a, b;
+int n, m;
 
 int solve()
 {
-    int ans = 0;
-    while (a <= b)
+    int temp[maxN] = {};
+    for (int i = 0; i < m; i++)
     {
-        a *= 3;
-        b *= 2;
-        ans++;
+        cin >> temp[i];
     }
-    return ans;
+    for (int i = 0; i < m; i++)
+    {
+
+        n -= temp[i];
+        if (n < 0)
+        {
+            return -1;
+        }
+    }
+    return n;
 }
 
 int main()
 {
     //	ios::sync_with_stdio(0);
     //	cin.tie(0);
-    cin >> a >> b;
+
+    cin >> n >> m;
     cout << solve() << endl;
 }

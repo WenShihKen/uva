@@ -4,7 +4,7 @@
  *  @name Vestigium
  *  @contest Qualification Round 2020
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <algorithm>
 #include <map>

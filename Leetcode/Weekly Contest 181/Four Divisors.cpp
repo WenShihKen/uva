@@ -4,7 +4,7 @@
  *  @name Four Divisors
  *  @contest Weekly Contest 181
  * 
- *  @tag math, implementation, prime
+ *  @tag math, ad-hoc, prime
  */
 class Solution
 {

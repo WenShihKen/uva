@@ -1,7 +1,7 @@
 /**
  *  @judge Code Jam 2020
- *  @id PB
- *  @name Nesting Depth
+ *  @id PA
+ *  @name Pattern Matching
  *  @contest Round 1A 2020
  * 
  *  @tag simulation, string

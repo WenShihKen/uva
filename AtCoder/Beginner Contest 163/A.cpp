@@ -1,8 +1,8 @@
 /**
- *  @judge Codeforces
- *  @id 791A
- *  @name Bear and Big Brother
- *  @contest Codeforces Round #405
+ *  @judge Atcoder
+ *  @id A
+ *  @name Circle Pond
+ *  @contest Beginner Contest 163
  * 
  *  @tag ad-hoc
  */
@@ -17,26 +17,19 @@
 #include <array>
 typedef long long int ll;
 using namespace std;
-#define maxN 1005
+#define maxN 6.28318530718
 
-int a, b;
+int n;
 
-int solve()
+void solve()
 {
-    int ans = 0;
-    while (a <= b)
-    {
-        a *= 3;
-        b *= 2;
-        ans++;
-    }
-    return ans;
 }
 
 int main()
 {
     //	ios::sync_with_stdio(0);
     //	cin.tie(0);
-    cin >> a >> b;
-    cout << solve() << endl;
+    int in1;
+    cin >> in1;
+    printf("%.2lf\n", maxN * in1);
 }

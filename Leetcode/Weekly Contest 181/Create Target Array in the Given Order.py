@@ -4,7 +4,7 @@
 # @name Create Target Array in the Given Order
 # @contest Weekly Contest 181
 #
-# @tag implementation
+# @tag ad-hoc
 #
 
 

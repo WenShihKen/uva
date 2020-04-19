@@ -4,7 +4,7 @@
  *  @name Largest Perimeter Triangle
  *  @contest 
  * 
- *  @tag math, implementation
+ *  @tag math, ad-hoc
  */
 
 class Solution

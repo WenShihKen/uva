@@ -4,7 +4,7 @@
  *  @name Wrong Subtraction
  *  @contest Codeforces Round #479
  * 
- *  @tag implementation
+ *  @tag ad-hoc
  */
 #include <algorithm>
 #include <map>

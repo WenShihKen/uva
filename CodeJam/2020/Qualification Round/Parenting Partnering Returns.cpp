@@ -4,7 +4,7 @@
  *  @name Parenting Partnering Returns
  *  @contest Qualification Round 2020
  *
- *  @tag simulation, sort, implementation
+ *  @tag simulation, sort, ad-hoc
  */
 #include <algorithm>
 #include <map>
