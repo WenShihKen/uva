@@ -4,7 +4,7 @@
  *  @name Count Number of Teams
  *  @contest Weekly Contest 182
  * 
- *  @tag implemetation
+ *  @tag ad-hoc
  */
 class Solution
 {

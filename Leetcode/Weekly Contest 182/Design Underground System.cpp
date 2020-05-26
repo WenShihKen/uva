@@ -4,7 +4,7 @@
  *  @name Design Underground System
  *  @contest Weekly Contest 182
  * 
- *  @tag implemetation, simulation
+ *  @tag ad-hoc, simulation
  */
 class UndergroundSystem
 {

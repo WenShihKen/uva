@@ -1,3 +1,15 @@
 {
-    "python.pythonPath": "C:\\Python37-32\\python.exe"
+    "python.pythonPath": "C:\\Python37-32\\python.exe",
+    "files.associations": {
+        "*.jl": "Julia",
+        "chrono": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "valarray": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
+    }
 }

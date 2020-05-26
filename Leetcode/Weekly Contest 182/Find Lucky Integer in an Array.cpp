@@ -4,7 +4,7 @@
  *  @name Find Lucky Integer in an Array
  *  @contest Weekly Contest 182
  * 
- *  @tag implemetation
+ *  @tag ad-hoc
  */
 class Solution
 {
